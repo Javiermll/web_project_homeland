@@ -7,7 +7,7 @@
   margin: 92px auto 0;
 }
 
-.content__title {
+.main__title {
   /*Ancho maximo del titulo*/
   max-width: 830px;
   margin-top: 0;
@@ -60,7 +60,7 @@
     margin: 64px 16px 0;
   }
 
-  .content__title {
+  .main__title {
     /*Ancho maximo del titulo*/
     margin-bottom: 40px;
 
@@ -83,7 +83,7 @@
     margin: 90px 24px 0;
   }
 
-  .content__title {
+  .main__title {
     /*Ancho maximo del titulo*/
     margin-bottom: 50px;
 
