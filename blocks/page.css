@@ -3,6 +3,9 @@ body {
   background: #2a2c2f;
 }
 .page {
+  /*Fuente global*/
+  font-family: "Inter", Arial, sans-serif;
+
   /*optimizacion de fuentes en distintos disposivos*/
   /*Suavizado de fuentes*/
   -moz-osx-font-smoothing: grayscale;
