@@ -46,7 +46,7 @@
 .main__paragraph_second-text {
   text-align: left;
   margin-top: 0;
-  margin-bottom: 92px;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 163%;
@@ -69,10 +69,6 @@
   .main__paragraph_firts-text {
     line-height: 30px;
   }
-
-  .main__paragraph_second-text {
-    margin-bottom: 64px;
-  }
 }
 
 @media screen and (min-width: 544px) and (max-width: 1024px) {
@@ -91,9 +87,5 @@
 
   .main__paragraph_firts-text {
     line-height: 34px;
-  }
-
-  .main__paragraph_second-text {
-    margin-bottom: 88px;
   }
 }

@@ -8,8 +8,7 @@ footer {
 
 .footer__copyright {
   max-width: 195px;
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 
   font-size: 14px;
   line-height: 16px;

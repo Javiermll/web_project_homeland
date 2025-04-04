@@ -23,3 +23,7 @@ body {
   width: 100%; /*Aplicacion para la responsividad*/
   color: #ffffff;
 }
+
+p {
+  margin: 0;
+}

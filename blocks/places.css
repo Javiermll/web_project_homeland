@@ -1,0 +1,268 @@
+.places {
+  background: #2a2c2f;
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto 90px;
+  gap: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.places__content {
+  max-width: 990px;
+
+  display: grid;
+  justify-content: center;
+  align-items: normal;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas:
+    "places__title  places__website"
+    "places__image  places__paragraph"
+    "places__image  places__paragraph"
+    "places__button places__paragraph";
+
+  margin: 0 auto 0;
+}
+
+.places__title {
+  grid-area: places__title;
+  max-width: 460px;
+
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  margin: 0 0 48px;
+}
+
+.places__image {
+  grid-area: places__image;
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  max-width: 460px;
+  width: 100%;
+  height: max-content;
+}
+
+.places__image:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/places_1.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0.5;
+}
+
+.places__website {
+  grid-area: places__website;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 460px;
+  margin: 85px 28px 48px 40px;
+}
+
+.places__website_url-heading {
+  max-width: 86px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #aaaaaa;
+  margin-bottom: 8px;
+}
+
+.places__website_artist-name {
+  margin: 0;
+  max-width: 460px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.places__paragraph {
+  grid-column: 2/3;
+  grid-row: 2/5;
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+
+  max-width: 484px;
+  max-height: 470px;
+
+  text-align: justify;
+  margin: 0 0 0 40px;
+}
+
+.places__button {
+  grid-row: 4;
+
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  width: 249px;
+  height: 22px;
+  margin-top: 48px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.places__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 544px) and (max-width: 1024px) {
+  .places {
+    max-width: 720px;
+    width: 100%;
+
+    gap: 72px;
+  }
+
+  .places__content {
+    max-height: 900px;
+    margin: 0 14px 0;
+  }
+
+  .places__title {
+    max-width: 390px;
+    font-size: 42px;
+    line-height: 46px;
+
+    margin: 0 0 48px;
+  }
+
+  .places__title_first {
+    margin-top: 22px;
+  }
+
+  .places__image {
+    max-width: 340px;
+  }
+
+  .places__website {
+    max-width: 352px;
+    margin: 0 0 48px 28px;
+  }
+
+  .places__website_url-heading {
+    max-width: 67px;
+  }
+
+  .places__website_artist-name {
+    max-width: 352px;
+  }
+
+  .places__paragraph {
+    grid-row: 2/5;
+    max-width: 360px;
+    max-height: 720px;
+    height: 100%;
+
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 163%;
+
+    margin: 0 0 0 20px;
+  }
+
+  .places__button {
+    grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .places {
+    max-width: 320px;
+    margin-bottom: 65px;
+    gap: 50px;
+  }
+
+  .places__content {
+    display: grid;
+    justify-items: center;
+
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas:
+      "places__title"
+      "places__website"
+      "places__image"
+      "places__paragraph"
+      "places__button";
+  }
+
+  .places__title {
+    grid-area: places__title;
+    max-width: 290px;
+    margin: 0 0 30px;
+
+    font-size: 32px;
+    line-height: 35px;
+
+    text-align: center;
+  }
+
+  .places__website {
+    grid-area: places__website;
+    max-width: 352px;
+    margin: 0 16px 30px;
+  }
+  .places__website_url-heading {
+    max-width: 288px;
+  }
+
+  .places__website_artist-name {
+    max-width: 300px;
+  }
+
+  .places__image {
+    grid-area: places__image;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .places__paragraph {
+    grid-area: places__paragraph;
+    display: contents;
+
+    max-width: 290px;
+    max-height: 870px;
+    height: 100%;
+
+    font-size: 1em;
+    line-height: 163%;
+  }
+
+  .places__button {
+    grid-area: places__button;
+
+    max-width: 290px;
+    margin-top: 30px;
+
+    font-size: 14px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+  }
+}
