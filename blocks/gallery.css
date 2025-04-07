@@ -1,11 +1,11 @@
-.photo-grid {
+.gallery {
   background: #2a2c2f;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.gallery {
+.gallery__container {
   max-width: 1190px;
   margin: 118px auto 92px;
   display: grid;
