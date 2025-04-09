@@ -247,7 +247,6 @@
 
   .places__paragraph {
     grid-area: places__paragraph;
-    display: contents;
 
     max-width: 290px;
     max-height: 870px;
@@ -255,6 +254,8 @@
 
     font-size: 1em;
     line-height: 163%;
+
+    margin: 0 10px 0;
   }
 
   .places__button {
