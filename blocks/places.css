@@ -64,7 +64,7 @@
   margin: 85px 28px 48px 40px;
 }
 
-.places__website_url-heading {
+.places__website-url_heading {
   max-width: 86px;
 
   font-weight: 400;
@@ -89,7 +89,7 @@
 .places__paragraph {
   grid-column: 2/3;
   grid-row: 2/5;
-  font-family: "Inter-Regular";
+  /*font-family: "Inter-Regular";*/
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
@@ -119,6 +119,7 @@
   line-height: 22px;
 
   color: #ffffff;
+  text-decoration: none;
 }
 
 .places__button:hover {

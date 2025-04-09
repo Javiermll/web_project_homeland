@@ -20,7 +20,7 @@
 }
 
 @media screen and (min-width: 544px) and (max-width: 1024px) {
-  .gallery {
+  .gallery__container {
     margin: 64px 24px 88px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,7 +30,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
-  .gallery {
+  .gallery__container {
     margin: 38px 16px 62px;
     display: grid;
     grid-template-columns: 1fr;
